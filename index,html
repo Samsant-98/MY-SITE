@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    <header>
+        <imag> src=imag/foto.jpg;</imag>
+        <h1>HELLO MY NAME SAMUEL SANTANA E SILVA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">github</a></li>
+            <li><a href="">linedin</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <imag>src=imag/apresentação.jpg</imag>
+        <h2>ESTUDANTE DE ENGENHARRIA DE SOFTWARE </h2>
+        <p>INTERESSADO EM DESENVOLVIMENTO FRONT END E FULL STACK</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>
