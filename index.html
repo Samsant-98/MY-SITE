@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contador — Marrom & Branco</title>
+  <meta name="description" content="Um contador simples com tema marrom e branco." />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%2B%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <h1 class="site-title">Contador</h1>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="counter" aria-labelledby="counter-heading">
+      <h2 id="counter-heading" class="visually-hidden">Controles do contador</h2>
+
+      <div class="display" role="status" aria-live="polite" aria-atomic="true" aria-label="Valor atual do contador">
+        <span id="value" class="value" data-testid="value">0</span>
+      </div>
+
+      <form class="controls" autocomplete="off" onsubmit="return false;">
+        <div class="step-field">
+          <label for="step">Passo</label>
+          <input id="step" name="step" type="number" inputmode="numeric" min="1" step="1" value="1" aria-describedby="step-help" />
+          <small id="step-help" class="help">Quantia adicionada ou subtraída a cada clique.</small>
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="decrement" class="btn btn-secondary" aria-label="Diminuir">−</button>
+          <button type="button" id="reset" class="btn btn-ghost" aria-label="Redefinir">Redefinir</button>
+          <button type="button" id="increment" class="btn btn-primary" aria-label="Aumentar">+</button>
+        </div>
+      </form>
+
+      <div class="shortcuts" aria-live="polite">
+        <p class="hint">Atalhos: ↑/+/= aumenta, ↓/− diminui, R ou 0 redefine.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Feito com tema marrom e branco.</p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
+
